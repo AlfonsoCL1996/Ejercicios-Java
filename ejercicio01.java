@@ -113,18 +113,22 @@ public class ejercicio01 {
             case 4: System.out.println(miDia[3]); break;
             case 5: System.out.println(miDia[4]); break;
         }
-
+        
+        //while
         int v = 0;
         while (v < 3) { System.out.println(v); v++; }
 
+        //do-while
         int j = 0;
         do { System.out.println(j); j++; } while (j < 3);
 
+        //for
         for (int k = 0; k < 3; k++) { System.out.println(k); }
-
+        //for avanzado
         int[] arr = {1, 2, 3};
         for (int n : arr) { System.out.println(n); }
 
+        //try-catch-finally, control de flujo para gestion de excepciones
         try {
             int f = 10 / 0;
             System.out.println("f 10/0 a juicio" + f);      //Nunca se va a ejecutar porque 10/0 se ejecuta como un error que recoge directamente catch, sin ejecutarse el bloque try
@@ -133,9 +137,9 @@ public class ejercicio01 {
         } finally {
         System.out.println("Fin");
         }
+        
         //Crea un programa que imprima por consola todos los números comprendidos
         //entre 10 y 55 (incluidos), pares, y que no son ni el 16 ni múltiplos de 3.
-
         for (int s=10; s<=55; s++) {
             if (s%2==0 && s%3!=0 && s!=16) {
                 System.out.println(s);
