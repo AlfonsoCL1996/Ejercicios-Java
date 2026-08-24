@@ -21,8 +21,11 @@ import java.util.LinkedHashSet;       // Clase concreta que implementa Set mante
 import java.util.TreeMap;             // Clase concreta que implementa Map ordenado por clave
 import java.util.LinkedHashMap;       // Clase concreta que implementa Map manteniendo orden de insercion
 import java.util.PriorityQueue;       // Clase concreta que implementa Queue ordenando por prioridad
+import java.util.Scanner;             // Clase para recoger datos por terminal
 
 public class ejercicio03 {
+
+    private static Map<String, String> agenda = new HashMap<>();
     public static void main(String[] args) {
         //ESTRUCTURAS DE DATOS EN JAVA
         // Unidimensional
@@ -140,13 +143,70 @@ public class ejercicio03 {
         * - El programa no puede dejar introducir números de teléfono no numéricos y con más
         *   de 11 dígitos (o el número de dígitos que quieras).
         * - También se debe proponer una operación de finalización del programa.*/
-       Map<String, String> agenda = new HashMap<>();
-
+        int opcion = -1;
+        Scanner scan = new Scanner(System.in);
+        while (opcion != 0) {
+            System.out.println("----MENU----");
+            System.out.println("Pulse un numero para acceder al recurso que necesite");
+            System.out.println("1. Añadir usuario");
+            System.out.println("2. Buscar usuario");
+            System.out.println("3. Actualizar usuario");
+            System.out.println("4. Eliminar usuario");
+            System.out.println("0. Salir");
+            opcion = scan.nextInt();
+            scan.nextLine();
+            switch (opcion) {
+                case 1:
+                    System.out.println("Añadir usuario: ");
+                    añadirUsuario();
+                    break;
+                case 2:
+                    System.out.println("Buscar usuario por nombre: ");
+                    String nombreAñadir = scan.nextLine();
+                    buscarUsuario(nombreAñadir);
+                    break;
+                case 3:
+                    System.out.println("Actualizar nombre: ");
+                    String nombreActualizar = scan.nextLine();
+                    System.out.println("Actualizar telefono: ");
+                    String telefonoActualizar = scan.nextLine();
+                    actualizarUsuario(nombreActualizar, telefonoActualizar);
+                    break;
+                case 4:
+                    System.out.println("Usuario a eliminar");
+                    System.out.println("Nombre: ");
+                    String nombreEliminar = scan.nextLine();
+                    eliminarUsuario(nombreEliminar);
+                    break;
+                case 0:
+                    System.out.println("ADIOS ADIOS ADIOS ADIOS");    
+            }
+        }
+        scan.close();
     }
-    public static void añadirUsuario(String nombre, String telefono){}
-    public static void eliminarUsuario(String nombre){}
-    public static void actualizarUsuario(String nombre, String telefono){}
-    public static void buscarUsuario(String nombre){}
+    public static void añadirUsuario(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nombre: ");
+        String nombre = sc.nextLine();
+        System.out.println("Telefono: ");
+        String telefono = sc.nextLine();
+        agenda.put(nombre,telefono);
+        sc.close();
+    }
+    public static void eliminarUsuario(String nombre){
+        agenda.remove(nombre);
+    }
+    public static void actualizarUsuario(String nombre, String telefono){
+        agenda.put(nombre, telefono);
+    }
+    public static void buscarUsuario(String nombre){
+        if (agenda.containsKey(nombre)) {
+            System.out.println("ESISTE " + agenda.get(nombre));
+        } else {
+            System.out.println("NO ESISTE :( ");
+        }
+        agenda.containsKey(nombre);
+    }
 }
 
 class Nodo<T> {
