@@ -7,7 +7,7 @@ public class ejercicio04Dificultad {
     * para descubrir si son:
     * - Palíndromos: palabras que se leen igual de alante atras que de atras alante
     * - Anagramas: palabras que pueden formar otras palabras a partir de si mismas
-    * - Isogramas: palabras que no repiten letras dentro de si mismas */
+    * - Isogramas: palabras que no repiten letras dentro de si mismas.. */
 
     public static void main(String[] args) {
         String palindromo = "ana";

@@ -6,7 +6,7 @@ public class ejercicio04 {
  * en tu lenguaje. Algunas de esas operaciones podrían ser (busca todas las que puedas):
  * - Acceso a caracteres específicos, subcadenas, longitud, concatenación, repetición,
  *   recorrido, conversión a mayúsculas y minúsculas, reemplazo, división, unión,
- *   interpolación, verificación...
+ *   interpolación, verificación.....
  */
     public static void main(String[] args) {
         //Declaracion de clase String (Objeto)

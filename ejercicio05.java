@@ -35,7 +35,7 @@ public class ejercicio05 {
         // 2. ASIGNACIÓN POR REFERENCIA (Objetos)
         // ============================================================
         // Los objetos (arrays, String, clases, etc.) almacenan 
-        // una REFERENCIA a la posición en memoria donde está el objeto.
+        // una REFERENCIA a la posición en memoria donde está el objeto..
         
         int[] array1 = {1, 2, 3};  // array1 guarda la dirección de memoria del array
         int[] array2 = array1;     // array2 recibe LA MISMA referencia (apunta al mismo array)

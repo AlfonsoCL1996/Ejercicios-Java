@@ -7,7 +7,7 @@
  *   se asigna a dos variables diferentes a las originales. A continuación, imprime
  *   el valor de las variables originales y las nuevas, comprobando que se ha invertido
  *   su valor en las segundas.
- *   Comprueba también que se ha conservado el valor original en las primeras.
+ *   Comprueba también que se ha conservado el valor original en las primeras..
  */
 
 public class ejercicio05DE {

@@ -2,7 +2,7 @@
  * EJERCICIO:
  * - Muestra ejemplos de creación de todas las estructuras soportadas por defecto
  *   en tu lenguaje.
- * - Utiliza operaciones de inserción, borrado, actualización y ordenación.
+ * - Utiliza operaciones de inserción, borrado, actualización y ordenación...
  */
 
 import java.util.Arrays;             // Clase utilitaria con metodos estaticos para arrays (ej. sort())
