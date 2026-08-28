@@ -16,7 +16,7 @@ import java.util.Scanner;
 
 
 public class ejercicio03_DificultadExtra {
-    private static Map<String, String> agenda = new HashMap();
+    private static Map<String, String> agenda = new HashMap<>();
     public static void main(String[] args) {
         int opcion = -1;
         Scanner scan = new Scanner(System.in);
@@ -66,6 +66,7 @@ public class ejercicio03_DificultadExtra {
         System.out.println("Telefono: ");
         String telefono = sc.nextLine();
         agenda.put(nombre,telefono);
+        sc.close();
     }
     public static void eliminarUsuario(String nombre){
         agenda.remove(nombre);

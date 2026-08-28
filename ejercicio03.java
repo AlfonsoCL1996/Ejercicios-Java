@@ -31,6 +31,7 @@ public class ejercicio03 {
         // Unidimensional
         int[] vector = {10, 20, 30};
         int primero = vector[0];
+        System.out.println(primero);
         vector[1] = 99;              // Actualización
         System.out.println(vector.length);
 
@@ -102,6 +103,7 @@ public class ejercicio03 {
         sb.append("Hola");
         sb.append(" Mundo");
         String resultado = sb.toString();
+        System.out.println(resultado);
 
         //OTRAS CLASES CONCRETAS QUE IMPLEMENTAN LAS MISMAS INTERFACES
 
